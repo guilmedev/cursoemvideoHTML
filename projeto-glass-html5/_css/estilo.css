@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed');
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+p{
+    text-align: justify;
+    text-indent: 15px;           
+}
+
+figure.foto-legenda {   
+    position: relative;
+    border: 3px solid lightgray;
+    box-shadow: 8px 8px 8px lightgray;     
+    position: relative;
+}
+
+figure.foto-legenda img{   
+    max-width: 100%;
+    max-height: 100%;
+    }
+
+
+
+figure.foto-legenda figcaption{
+    opacity: 0;
+     position: absolute; 
+     top: 0px;
+     background-color: rgba(0,0,0,.5);
+     color: white;
+     width: 100%;
+     height: 100%;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     padding: 10px;
+     box-sizing: border-box; 
+     transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 250px;
+
+
+}
+
+nav#menu h1{
+    display: none;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: gray;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 0.3s;
+}
+
+nav#menu li:hover{
+    background-color: dodgerblue;
+}
+
+nav#menu {
+    display: block;
+}
+
+nav#menu a{
+    color: black;
+    text-decoration: none;  
+}
+
+nav#menu a:hover{
+    color: white;       
+    }
+
+
+body{
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+a:hover{
+    
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div#interface{   
+    width: 900px;
+    padding: 10px;
+    background-color :white;    
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px  black;
+
+}
+
+header#cabecalho img#icone{
+    position: absolute;
+    left: 800px;
+    top: 30px;    
+}
+
+header#cabecalho{     
+    position: relative;
+    border-bottom: 1px black solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
+}
+
+header#cabecalho h1{
+    font-family: 'FonteLogo', Helvetica, sans-serif´;
+    font-size: 30pt;
+    color: darkgray;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    padding:0px;
+    margin-bottom: 0px;
+}
+header#cabecalho h2{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding:0px;
+    margin-top: 0px;
+}
+
+section#corpo{
+    display: block;
+    width: 500px;
+    float: left;
+    border-right:1px solid black;
+    padding-right: 12px
+    
+
+}
+
+aside#lateral{
+    display: block;
+    width: 370px;
+    float: right;
+    margin-right: 8px;
+    background-color:#dddddd;
+    margin-top: 12px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5)
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid black;
+}
+
+footer#rodape p{
+    text-align: center;    
+}
+
+table#tabela{
+    border: 1px solid black;
+    background-color: lightgray;
+    box-shadow: 1px 1px 1px black;
+    border-spacing: 0px;
+    margin: auto auto auto;
+}
+
+table#tabela td{
+    padding: 10px;
+    border: 0.23px solid black;
+    font-weight: bold;    
+}
+
+table#tabela td.direita{
+    text-align: right;
+    color: white;
+    background-color: gray;
+    vertical-align: top;
+}
+
+table#tabela td.esquerda{
+    text-align: left;
+    vertical-align: middle;
+}
+
+table#tabela caption{
+    color: gray;
+    font-size: 15pt;
+    font-weight: bolder
+}
+
+table#tabela caption span{
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+article#noticia h2{
+    font-size: 12pt;  
+    background-color: lightslategray;
+    padding: 3px;
+    margin: 5px;   
+}
+
+header#cabecalho-artigo h1{
+    font-family: 'FonteLogo', Helvetica, sans-serif´;
+    font-size: 20pt;
+    color: gray;
+}
+
+
+header#cabecalho-artigo h2{
+    font-size: 12pt;
+    color: gray;
+    font-weight: bold;   
+}
+
+header#cabecalho-artigo h3{
+    font-size: 10pt;
+    color: darkgray;
+}
+
+aside#lateral h1{
+    font-family: 'FonteLogo', Helvetica, sans-serif´;
+    font-size: 20pt;
+    color: lightslategrey;
+}
+
+aside#lateral h2{
+    background-color: lightslategrey;
+    color: white;
+    padding: 4px;
+    
+}
+
+
+aside#lateral h3{
+    font-family: 'FonteLogo', Helvetica, sans-serif´;
+    font-size: 18pt;
+    font-weight: bold;
+    color: gray;
+}
+

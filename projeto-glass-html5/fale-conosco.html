@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tudo sobre Google Glass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/form.css"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+
+
+    
+</head>
+<body>
+    
+
+<div id="interface">
+
+
+<header id = "cabecalho">
+        
+    <img src="_imagens/contato.png" alt="oculos_pequeno" id="icone">
+
+        <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul class="lista-menu-nav">                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="specs.html">Especificações</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="multimidia.html">Multimídia</a></li>
+                <li><a href="fale-conosco.html">Fale conosco</a></li>
+                
+                </ul>
+                </nav>            
+                <!-- 
+ Hg group apenas para semantica HTML
+ importante para o HTML
+ visualmente nao tem diferençca   
+-->
+<hgroup>
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando</h2>
+    </hgroup>
+
+</header>
+
+<section id="corpo-full">
+    <article id="noticia">
+            <header id="cabecalho-artigo">
+    <hgroup>
+            <h3>Fale Conosco > Contato</h3>
+            <h1>Formulário de Contato</h1>
+            <h3>por Guilherme Sabino</h3>
+            <h3>Atualizado em Abril/2018</h3>       
+    </hgroup>
+            </header>
+    
+<form method="POST" id="formContato">
+<fieldset id="usuario">
+    <legend>
+            Identificação do Usuário
+    </legend>    
+    <p><label for="campoNome">Nome:</label>  <input type="text" name="textoNome" id="campoNome" size="20" maxlength=25 placeholder="Digite seu nome"></p> 
+
+    <p><label for="campoSenha">Senha:</label> <input type="password" name="textSenha" id="campoSenha" size="8" maxlength="8" placeholder="Senha"></p>
+
+    <p><label for="campoEmail">E-mail:</label> <input type="email" name="textEmail" id="campoEmail" size="20" maxlength="40"></p>
+
+    <fieldset id="sexo">
+        <legend>Sexo:</legend>            
+    <input type="radio" name="textSexo" id="campoMasc"><label for="campoMasc">Masculino</label> 
+    <br>
+    <input type="radio" name="textSexo" id="campoFem"><label for="campoFem">Feminino</label>
+ 
+    </fieldset>
+
+    <p><label for="campoNasc">Data de Nascimento:</label>  <input type="date" name="textNasc" id="campoNasc">   </p>
+
+</fieldset>
+
+<fieldset id="endereco">
+    <legend>Endereço do Usuário</legend>
+    
+    <p><label for="campoLog"> Logradouro: </label>  <input type="text" name="textLog" id="campoLog" size="13" maxlength="80" placeholder="Rua/Avenida etc"></p>
+    <p><label for="campoNumero"> Número: </label> <input type="number" name="textNumero" id="campoNumero" size="4" maxlength="8" min="0" max="9999" ></p>
+    <p><Label for="campoEstado"> Estado: </Label> <select name="textEstado" id="campoEstado">
+        <optgroup label="Regiao Sudeste">
+                <option selected value="SP"> São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="BH">Belo Horizonte</option>
+        </optgroup>
+        <optgroup label="Região Sul">
+                <option value="RS">Rio Grande Do Sul</option>
+                <option value="PR">Paraná</option>                
+        </optgroup>        
+    </select></p>
+
+     <p><label for="campoCidade"> Cidade:   </label> <input type="text" name="textCidade" id="campoCidade" list="cidades"></p>
+     <datalist id="cidades">
+         <option value="Rio de Janeiro"></option>
+         <option value="Nova Iguaçu"></option>
+         <option value="Niterói"></option>
+     </datalist>
+
+</fieldset>
+
+<fieldset id="mensagem">
+    <legend>
+            Mensagem do Usuário
+    </legend>
+    
+    <p> <label for="campoUrg"> Grau de Urgência:  </label>Min <input type="range" name="textUrg" id="campoUrg" min="0" max="10"> Máx</p>
+
+    <p><label for="campoMsg">Mensagem:  </label> <br>   <textarea name="textMsg" id="campoMsg" cols="25" rows="5" placeholder="Deixe aqui sua mensagem"
+    ></textarea></p>
+</fieldset>
+
+<fieldset id="pedido">
+    <legend>Quero um Google Glass</legend>
+    
+    <p><input type="checkbox" name="textCheckQuero" id="campoCheckQuero" > <label for="campoCheckQuero"> Gostaria de adquirir um Google Glass quando disponível</label></p>
+
+    <p><label for="campoColor">Cor: </label> <input type="color" name="textColor" id="campoColor"></p>
+    
+    <p>
+        <label for="campoQnt">Quantidade:</label>
+        <input type="number" name="textQnt" id="campoQnt" min="0" max="10" value="0">
+    </p>
+     <p>
+            Preço Total: R$ <input type="text" name="textPreco" id="campoPreco" placeholder="Total a pagar" readonly>
+     </p>
+</fieldset>
+
+</form>
+
+
+
+<input type="submit" value="Enviar" name="textEnviar" id="btn-enviar">
+    </article>
+</section>
+<footer id="rodape">
+    <p>
+    Copyright &copy; 2018 - by Guilherme Gouveia <br/>
+    <a href="https://www.facebook.com.br" target="_blank">Facebook</a> | <a href="https://www.instagram.com/" target="_blank">Instragram</a>
+    </p>
+</footer>
+
+    </div>
+
+    <script>
+            var precoUni = 1500;
+            $(document).ready(function(){
+
+                $("#campoQnt").change(function(){
+                    //pega o valor do campo
+                    var qnt = $(this).val();
+                    //Faz a multiplicação
+                    var total = qnt * precoUni;                
+                    //Atualiza o preco no campo
+                    $('#campoPreco').val(total);
+                });
+            });                            
+            </script>
+
+</body>
+</html>
